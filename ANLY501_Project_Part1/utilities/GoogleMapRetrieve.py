@@ -35,7 +35,7 @@ def main():
     URLPost={'location': str(lat)+','+str(lon),
              'radius':500,
              'type':'subway_station',
-             'key':'AIzaSyBfa7ZFgSUsx3JTGcvM_SGq7jcHqay7fpI'}
+             'key':'###YOUR_API_KEY'}
     jsontxt=UseUrllib(BaseURL,URLPost)
     with open('google_data.json', 'w') as f:
         json.dump(jsontxt, f)
